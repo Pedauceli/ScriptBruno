@@ -7,8 +7,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82">
-        <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/ "/>
+    <owl:Ontology rdf:about="http://purl.org/caedA1/ontologia/ex">
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/%20"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -42,9 +42,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasIdeb -->
+    <!-- http://purl.org/caed_A1/ex#hasIdeb -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasIdeb">
+    <owl:ObjectProperty rdf:about="http://purl.org/caed_A1/ex#hasIdeb">
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Conecta um estado à uma nota do IDEB</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hasIdeb</rdfs:label>
     </owl:ObjectProperty>
@@ -62,22 +62,22 @@
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasAprendizado2015 -->
+    <!-- http://purl.org/caed_A1/ex#hasAprendizado2015 -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasAprendizado2015">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2015_-_Anos_Finais"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/caed_A1/ex#hasAprendizado2015">
+        <rdfs:domain rdf:resource="http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasAprendizado2017"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caed_A1/ex#hasAprendizado2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Aprendizado do IDEB de 2015</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hasAprendizado2015</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasAprendizado2017 -->
+    <!-- http://purl.org/caed_A1/ex#hasAprendizado2017 -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasAprendizado2017">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2017_-_Anos_Finais"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/caed_A1/ex#hasAprendizado2017">
+        <rdfs:domain rdf:resource="http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Aprendizado do IDEB de 2017</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hasAprendizado2017</rdfs:label>
@@ -85,22 +85,33 @@
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasFluxo2015 -->
+    <!-- http://purl.org/caed_A1/ex#hasEvolucao2017 -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasFluxo2015">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2015_-_Anos_Finais"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/caed_A1/ex#hasEvolucao2017">
+        <rdfs:domain rdf:resource="http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasFluxo2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Evolucao do IDEB de 2015 para 2017</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hasEvolucao2017</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caed_A1/ex#hasFluxo2015 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caed_A1/ex#hasFluxo2015">
+        <rdfs:domain rdf:resource="http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caed_A1/ex#hasFluxo2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fluxo do IDEB de 2015</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hasFluxo2015</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasFluxo2017 -->
+    <!-- http://purl.org/caed_A1/ex#hasFluxo2017 -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasFluxo2017">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2017_-_Anos_Finais"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/caed_A1/ex#hasFluxo2017">
+        <rdfs:domain rdf:resource="http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fluxo do IDEB de 2017</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hasFluxo2017</rdfs:label>
@@ -108,25 +119,34 @@
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasNotaIDEB2015 -->
+    <!-- http://purl.org/caed_A1/ex#hasNotaIDEB2015 -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasNotaIDEB2015">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2015_-_Anos_Finais"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/caed_A1/ex#hasNotaIDEB2015">
+        <rdfs:domain rdf:resource="http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasNotaIDEB2017"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caed_A1/ex#hasNotaIDEB2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Nota do IDEB 2015</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hasNotaIDEB2015</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasNotaIDEB2017 -->
+    <!-- http://purl.org/caed_A1/ex#hasNotaIDEB2017 -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#hasNotaIDEB2017">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2017_-_Anos_Finais"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/caed_A1/ex#hasNotaIDEB2017">
+        <rdfs:domain rdf:resource="http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Nota do IDEB 2017</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hasNotaIDEB2017</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caed_A1/ex#hasSigla -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caed_A1/ex#hasSigla">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sigla do estado</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hasSigla</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -142,27 +162,29 @@
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#Estados_do_Brasil -->
+    <!-- http://purl.org/caed_A1/ex#Estados_do_Brasil -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#Estados_do_Brasil">
+    <owl:Class rdf:about="http://purl.org/caed_A1/ex#Estados_do_Brasil">
+        <owl:disjointWith rdf:resource="http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais"/>
+        <owl:disjointWith rdf:resource="http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dataset contendo os estados do Brasil</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2015_-_Anos_Finais -->
+    <!-- http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2015_-_Anos_Finais">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2017_-_Anos_Finais"/>
+    <owl:Class rdf:about="http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais">
+        <owl:disjointWith rdf:resource="http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dataset contendo as notas do IDEB por estado do ano de 2015</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IDEB 2015 - Anos Finais</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2017_-_Anos_Finais -->
+    <!-- http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/auceli/ontologies/2020/1/untitled-ontology-82#IDEB_2017_-_Anos_Finais">
+    <owl:Class rdf:about="http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais">
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dataset contendo as notas do IDEB por estado do ano de 2017</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">IDEB 2017 - Anos Finais</rdfs:label>
     </owl:Class>
